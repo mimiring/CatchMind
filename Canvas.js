@@ -6,14 +6,11 @@ class Canvas {
 
   constructor() {
     this.$canvas = document.getElementById("jsCanvas");
-
+    
     this.context = this.$canvas.getContext("2d");
     this.context.fillStyle = "white";
     this.context.fillRect(0, 0, Canvas.CANVAS_WIDTH, Canvas.CANVAS_HEIGHT);
-    this.context.fillstrokeStyle = Canvas.INITIAL_COLOR;
-    this.context.fillStyle = Canvas.INITIAL_COLOR;
-    this.context.lineWidth = Canvas.LINE_WIDTH;
-    
+
     this.isPainting = false;
     this.isFilling = false;
 
@@ -23,6 +20,14 @@ class Canvas {
     this.handleMouseDown = this.handleMouseDown.bind(this);
     this.handleClick = this.handleClick.bind(this);
 
+    this.init();
+
+  }
+
+  init() {
+    this.setSize({ width : Canvas.CANVAS_WIDTH, height : Canvas.CANVAS_HEIGHT });
+    this.setColor(Canvas.INITIAL_COLOR);
+    this.setLineWidth(Canvas.LINE_WIDTH);
     this.setEvent();
   }
 
@@ -104,4 +109,4 @@ class Canvas {
 
 }
 
-new Canvas();
+const canvas = new Canvas();
