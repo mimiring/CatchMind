@@ -5,7 +5,7 @@ class Canvas {
   static LINE_WIDTH = 1;
 
   constructor() {
-    this.$canvas = document.getElementById("jsCanvas");
+    this.$canvas = document.getElementById("jscanvas");
     
     this.context = this.$canvas.getContext("2d");
     this.context.fillStyle = "white";
@@ -39,7 +39,7 @@ class Canvas {
 
   setColor(color) {
     this.context.fillStyle = color;
-    this.context.fillstrokeStyle = color;
+    this.context.strokeStyle = color;
   }
 
   setLineWidth(lineWidth) {
@@ -108,5 +108,3 @@ class Canvas {
   }
 
 }
-
-const canvas = new Canvas();
