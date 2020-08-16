@@ -24,4 +24,4 @@ class Palette {
   }
 }
 
-new Palette(new Canvas);
+export default Palette;

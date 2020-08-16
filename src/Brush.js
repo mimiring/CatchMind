@@ -20,4 +20,5 @@ class Brush {
   // to do : brush type
 
 }
-new Brush(new Canvas);
+
+export default Brush;
