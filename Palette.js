@@ -13,7 +13,7 @@ class Palette {
       return;
     }
     this.canvas.setColor(event.target.style.backgroundColor);
-    console.log(event);
+
   }
 
   setEvent() {
