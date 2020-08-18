@@ -93,6 +93,10 @@ class Canvas {
     this.isPainting = true;
   }
   
+  setMode() {
+    this.isFilling = !this.isFilling;
+  }
+
   handleClick() {
     if(this.isFilling) {
       this.fill();
