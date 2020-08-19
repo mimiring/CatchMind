@@ -17,7 +17,12 @@ class Toolbar {
         event.target.innerText = "Fill"
       }
     } else if(event.target.id === 'jsSave') {
-      // to do : save
+      const dataURL = this.canvas.getDataURL();
+      const link = document.createElement("a");
+
+      link.href = dataURL;
+      link.download = "catchmind_img";
+      link.click();
     }
     
   }

@@ -31,6 +31,10 @@ class Canvas {
     this.setEvent();
   }
 
+  getDataURL() {
+    return this.$canvas.toDataURL();
+  }
+
   setSize(size) {
     const { width, height } = size;
     this.$canvas.width = width;
