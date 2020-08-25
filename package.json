@@ -1,9 +1,10 @@
 {
-  "name": "CatchMind",
+  "name": "catchmind",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
+    "deploy": "gh-pages -d ./dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
